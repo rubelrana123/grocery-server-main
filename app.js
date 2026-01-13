@@ -12,6 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(GlobalError);
 app.use(cors());
+// base api route
 app.use("/api", router);
 
 module.exports = app;
